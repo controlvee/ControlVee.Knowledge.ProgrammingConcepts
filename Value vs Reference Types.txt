@@ -1,0 +1,5 @@
+await means when the line of code is executed dont pop it yet because we need to finish the code?
+
+static methods get copied and created again?
+why is cons.writeline in same stack as main?
+

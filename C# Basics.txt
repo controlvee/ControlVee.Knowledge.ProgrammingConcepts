@@ -1,0 +1,162 @@
+Working Store Types
+
+Simple:
+bool - T/F
+char - 16-bit Unicode Character 
+int - whole numver +-
+float/double - Fractional numbers
+string - text
+
+Collections:
+Array
+List
+Dictionary
+
+Custom:
+Enumeration
+Structure
+Class
+Interface
+Delegate
+
+Algorithmic Orders of Magnitude:
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(N^2)
+O(N^c)
+O(C^n)
+O(n!)
+
+Data Structures:
+    Array
+    List
+    Dictionary
+    Queue
+
+Flow of Control
+    Expressions: operators and precedence
+    Branching: if swtich
+    Looping: while do while for foreach
+
+Identifiers
+    Keywords
+    types
+    variables
+    param/args(args not formal)
+
+Testing/Debugging
+    Breakpoint
+
+C# started as a simple, genral purpose OOP language.
+    - string type checking
+    - array bounds checking
+    - detection of uninitialized variables
+    - auto GC
+
+C# 9 is current latest version.
+
+---HIERARCHY---
+
+Process and Threads
+    Process - a collection of resources - isolated from eachother
+        - Memory, Graphical Windows, Files, Network Streams, Threads, Mailslots, etc.
+    Thread - a unit of execution: share resrouces in the host process.
+        - Private Stack
+        - Shared Heap
+        - SHared Process resources
+        - Private Execution Context
+        - Runs code on a CPU
+        - EACH CPU HAS 1 THREAD EXECUTING AT ANY GIVEN TIME
+
+Process Centric Model = Isolated processes running from each other
+    - Processes cannot access eachother via their respective threads.
+    - Threads are cheaper than processes.
+
+Thread Centric Model = Threads share everything in their process, they are not isolated.
+    - They do not have built in secuirty.
+    - One thread can destroy all the other threads in the process.
+
+Assemblies = 
+    - Assemblies are isolated from eachother in the managed environment.
+    - Built in secuirty.
+
+C# - General purpose, OP, modern programming language.
+
+C# 9.0
+
+Assembly is a file and is executed by a thread, threads always execute code iteself.
+    - Output of a project or compile.
+
+Certain assemblies can be native code - when speed matters and not portability.
+    - precompile c# in this manner?
+
+
+.exe calls the CLR and necessary resources.
+    - assebmlies are IL.
+
+Formal aseembly name =
+Name of program (One) | version (1.2.4.6) | Language (en-US) | PK Token - hash of the public key or null
+
+
+
+
+Primitive Types (custom) -
+
+Enumerations (enum) 
+    &
+Structure (struct) - 
+    - "List" of choices.
+    - Efficient.
+    - Stored in one place.
+    - Not flexible.
+    - Cannot be a Parent.
+        - Single or Multiple selection model.
+
+Classes (class) -
+    - The basic work type for C#.  Used 90% of the time.
+    - Stored in two parts.
+    - Single Inherentnce.
+    - Less efficient in space and time.
+    - VERY flexible.
+
+Interfaces (interace) - ASK QUESTION about contract.
+    - Allows for multiple inheritence.
+
+Delegates (delegate) - 
+    - Complex.
+    - Events.
+    
+DATA - 
+Types are comprised of data and operations that arae poerfmed on that data.
+
+Constants and Literals:
+    - Literal - 3.14159 etc.
+    - Constant - named value, yard = 3ft (every time!).
+
+Unary operators:
+    ++a
+    a++
+
+Binary operators:
+    Infix a + b
+    Prefix operator + (a+b)
+
+Arithmetic operators:
+    + - % / *
+
+Equality operators:
+    == != x.Equalds(y)
+
+Ordinal operators:
+    < > <= >=
+
+
+System.Int32.MaxValue                     --> Where/how does the bit hold the negative sign?
+1111 1111 1111 1111 1111 1111 1111 111 _
+
+            vs
+
+System.UInt32.MaxValue                    --> How does the extra bit double the value?
+1111 1111 1111 1111 1111 1111 1111 1111
